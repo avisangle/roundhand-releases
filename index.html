@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orate — dictation for macOS</title>
+<style>
+  :root {
+    --bg: #fbfaf8; --fg: #1c1b19; --muted: #6b6862;
+    --line: #e3e0da; --accent: #1c1b19; --accent-fg: #fbfaf8;
+    --note-bg: #f3f1ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #171614; --fg: #ecebe7; --muted: #99958d;
+      --line: #302e2a; --accent: #ecebe7; --accent-fg: #171614;
+      --note-bg: #211f1c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 34rem; margin: 0 auto; padding: 4rem 1.25rem 5rem; }
+  h1 { font-size: 2.1rem; letter-spacing: -0.02em; margin: 0 0 .4rem; }
+  .tagline { color: var(--muted); margin: 0 0 2.5rem; font-size: 1.05rem; }
+  .download {
+    display: inline-block; background: var(--accent); color: var(--accent-fg);
+    text-decoration: none; padding: .8rem 1.5rem; border-radius: 8px;
+    font-weight: 600; font-size: 1.02rem;
+  }
+  .download:hover { opacity: .88; }
+  .req { color: var(--muted); font-size: .9rem; margin: .9rem 0 0; }
+  h2 { font-size: .78rem; text-transform: uppercase; letter-spacing: .09em;
+       color: var(--muted); margin: 3rem 0 .9rem; font-weight: 600; }
+  ul { padding-left: 1.15rem; margin: 0; }
+  li { margin-bottom: .45rem; }
+  .note { background: var(--note-bg); border: 1px solid var(--line);
+          border-radius: 8px; padding: 1rem 1.15rem; font-size: .93rem; }
+  .note p { margin: 0 0 .6rem; }
+  .note p:last-child { margin-bottom: 0; }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: .86rem; }
+  a { color: inherit; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Orate</h1>
+  <p class="tagline">Hold a key, speak, and the text lands where you were typing. On-device transcription — audio never leaves your Mac.</p>
+
+  <a class="download" href="https://github.com/avisangle/orate-releases/releases/latest">Download for macOS</a>
+  <p class="req">Requires an Apple Silicon Mac (M1 or later) and macOS 14 Sonoma or later. Intel Macs are not supported.</p>
+
+  <h2>Installing</h2>
+  <ul>
+    <li>Open the downloaded <code>.dmg</code> and drag Orate to Applications.</li>
+    <li>Launch it. Orate asks for <strong>Microphone</strong> and <strong>Accessibility</strong> permission — it needs both to hear you and to insert text.</li>
+    <li>On first run it downloads the speech model (about 470&nbsp;MB), once.</li>
+  </ul>
+
+  <h2>Updates</h2>
+  <div class="note">
+    <p>On its second launch Orate asks whether it may check for updates automatically. If you say yes, it checks about once a day and shows you what changed before installing anything — nothing is installed silently.</p>
+    <p>You can always check by hand from the menu-bar icon, or Settings → General → Check for Updates.</p>
+  </div>
+
+  <h2>Privacy</h2>
+  <ul>
+    <li>Audio is transcribed on your Mac and is never uploaded or written to disk.</li>
+    <li>No telemetry and no accounts.</li>
+    <li>Optional cleanup through an LLM runs only with your own API key, and only on the transcript text.</li>
+  </ul>
+
+  <footer>
+    Beta. <a href="https://github.com/avisangle/orate-releases/releases">All releases</a>
+  </footer>
+</main>
+</body>
+</html>
