@@ -58,9 +58,26 @@
   <h2>Installing</h2>
   <ul>
     <li>Open the downloaded <code>.dmg</code> and drag Orate to Applications.</li>
-    <li>Launch it. Orate asks for <strong>Microphone</strong> and <strong>Accessibility</strong> permission — it needs both to hear you and to insert text.</li>
+    <li>Launch it. macOS blocks the first launch of an unsigned app; the note below is the way through.</li>
+    <li>Orate then asks for <strong>Microphone</strong> and <strong>Accessibility</strong> permission — it needs both to hear you and to insert text.</li>
     <li>On first run it downloads the speech model (about 470&nbsp;MB), once.</li>
   </ul>
+
+  <!--
+    REMOVE THIS NOTE WHEN BUILDS ARE NOTARIZED (OR-116).
+    Every paragraph below is true only while releases are ad-hoc signed with no
+    Developer ID. Once Scripts/release.sh signs with a Developer ID certificate
+    and staples a notary ticket, macOS stops blocking the first launch and this
+    note becomes a false statement about a signed app. Keep the last paragraph:
+    Microphone and Accessibility are TCC prompts and survive notarization.
+  -->
+  <div class="note" style="margin-top: 1.1rem">
+    <p><strong>macOS will refuse to open Orate the first time.</strong> You get a dialog saying it cannot be checked for malicious software, offering to move it to the Trash. Don't: click <strong>Done</strong> (or <strong>Cancel</strong> on macOS 14) and leave the app where it is.</p>
+    <p>The reason is that this build is <strong>unsigned and unnotarized</strong>. Orate is not yet enrolled in Apple's paid developer programme, so macOS has nothing to verify the app against, and it warns in the strongest words it has. The warning is about the missing signature, not about anything found in the download.</p>
+    <p>To let it through, open <strong>System Settings → Privacy &amp; Security</strong>, scroll down to the security messages near the bottom, and click <strong>Open Anyway</strong> beside the one naming Orate. Authenticate, confirm once more, and Orate opens — and keeps opening from then on. This is the only route on macOS 15 Sequoia and later, where right-click → Open no longer works.</p>
+    <p>Expect one more round later. macOS marks each executable inside the app separately, and <strong>Open Anyway</strong> clears only the one you launched, so when Orate installs its first update its updater helper is blocked in the same way, for the same reason. A single command clears them all in advance. It is deliberately not printed here, because "paste this command to get past a macOS security warning" is also what fake install pages say; ask for it and it will be sent to you directly.</p>
+    <p><strong>Microphone</strong> and <strong>Accessibility</strong> are a separate matter. Those two are macOS asking your permission rather than warning you about the app, and Orate will still ask for them once it is signed.</p>
+  </div>
 
   <h2>Updates</h2>
   <div class="note">
