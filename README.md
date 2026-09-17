@@ -1,10 +1,10 @@
-# Orate — downloads and update feed
+# Roundhand — downloads and update feed
 
-Public distribution for [Orate](https://github.com/avisangle/orate), a macOS
+Public distribution for [Roundhand](https://github.com/avisangle/roundhand), a macOS
 menu-bar dictation app. **The application source is not in this repository.**
 
-- **Download:** [latest release](https://github.com/avisangle/orate-releases/releases/latest)
-- **Update feed:** `https://avisangle.github.io/orate-releases/appcast.xml`
+- **Download:** [latest release](https://github.com/avisangle/roundhand-releases/releases/latest)
+- **Update feed:** `https://avisangle.github.io/roundhand-releases/appcast.xml`
 
 Requires **Apple Silicon** and macOS 14 or later. Intel Macs are not supported.
 

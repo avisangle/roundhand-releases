@@ -1,9 +1,9 @@
 <?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>Orate</title>
-        <link>https://avisangle.github.io/orate-releases/appcast.xml</link>
-        <description>Updates for Orate</description>
+        <title>Roundhand</title>
+        <link>https://avisangle.github.io/roundhand-releases/appcast.xml</link>
+        <description>Updates for Roundhand</description>
         <language>en</language>
     </channel>
 </rss>
