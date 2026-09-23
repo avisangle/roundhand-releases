@@ -10,7 +10,7 @@ const COMMITMENTS = [
     body: "Sound is held in memory while you speak and discarded once it's transcribed. There are no recordings to leak or delete.",
   },
   {
-    title: "No account, no telemetry",
+    title: "No account, no tracking",
     body: "You don't sign up, and the app doesn't report usage, crashes or anything else back to us.",
   },
   {
@@ -19,7 +19,7 @@ const COMMITMENTS = [
   },
   {
     title: "Settings stay on your Mac",
-    body: "Shortcuts, presets and keys live in local configuration. Nothing is synced anywhere.",
+    body: "Your shortcuts, styles and keys are stored on your Mac. Nothing is synced anywhere.",
   },
   {
     title: "Online once, then optional",
@@ -37,7 +37,7 @@ export function Privacy() {
           </h2>
           <p className="mt-5 max-w-md text-lg leading-relaxed text-deep-muted">
             Dictation hears everything: names, numbers, half-formed ideas. That&rsquo;s why
-            Roundhand was built local-first instead of adding privacy settings later.
+            Roundhand was built to work on your Mac from day one, instead of adding privacy settings later.
           </p>
         </div>
 

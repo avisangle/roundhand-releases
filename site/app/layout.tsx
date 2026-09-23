@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Roundhand: private dictation for your Mac",
     description:
-      "Speak naturally and type anywhere on your Mac. On-device transcription, no accounts, no telemetry.",
+      "Speak naturally and type anywhere on your Mac. Transcribed on your Mac, with no account and no tracking.",
     type: "website",
     images: [{ url: APP_ICON[1024], width: 1024, height: 1024, alt: "Roundhand app icon" }],
   },

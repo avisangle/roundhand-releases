@@ -1,10 +1,10 @@
-import { AppWindow, Cpu, HardDriveDownload, MicOff } from "lucide-react";
+import { AppWindow, HardDriveDownload, MicOff, WifiOff } from "lucide-react";
 
 const FACTS = [
-  { icon: Cpu, title: "100% on-device transcription", detail: "Speech recognition and voice detection run locally." },
+  { icon: WifiOff, title: "Works offline", detail: "Your speech becomes text on your Mac. No internet needed after setup." },
   { icon: AppWindow, title: "Works in any app", detail: "Anywhere you can place a text cursor." },
   { icon: MicOff, title: "Zero audio stored", detail: "Recordings are never written to disk." },
-  { icon: HardDriveDownload, title: "15 MB download", detail: "A native Swift menu-bar app." },
+  { icon: HardDriveDownload, title: "15 MB download", detail: "Small, and lives quietly in your menu bar." },
 ];
 
 export function TrustStrip() {

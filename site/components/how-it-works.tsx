@@ -5,7 +5,7 @@ const STEPS = [
   },
   {
     title: "Roundhand transcribes on your Mac",
-    body: "When you let go, on-device speech recognition turns your words into text and tidies them up. Nothing is uploaded.",
+    body: "When you let go, speech recognition on your Mac turns your words into text and tidies them up. Nothing is uploaded.",
   },
   {
     title: "The text lands where your cursor is",

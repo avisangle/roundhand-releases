@@ -8,15 +8,15 @@ const FAQS = [
   },
   {
     q: "Is my voice data kept private?",
-    a: "Yes. Audio is transcribed on your Mac, kept only in memory while you speak, and never uploaded or saved to disk. There are no accounts and no telemetry.",
+    a: "Yes. Audio is transcribed on your Mac, kept only in memory while you speak, and never uploaded or saved to disk. There are no accounts and no usage tracking.",
   },
   {
     q: "Which apps does Roundhand work in?",
     a: "Any app where you can place a text cursor: Slack, Mail, Messages, Word, Pages, Notes, browsers and code editors. On first run macOS asks you to allow Microphone and Accessibility access, which Roundhand needs to hear you and insert text.",
   },
   {
-    q: "What is BYOK AI cleanup?",
-    a: "Bring your own key. Paste an API key from a provider such as OpenAI or Anthropic and Roundhand can rewrite transcripts with presets you define, like more formal, shorter or bullet points. Only the transcript text is sent, and the provider bills you directly.",
+    q: "Can I use my own AI account to polish the text?",
+    a: "Yes, if you want to. Paste an API key from OpenAI or Anthropic (Claude) and Roundhand can rewrite what you said in styles you define, like more formal, shorter or bullet points. Only the transcript text is sent, and the provider bills you directly.",
   },
   {
     q: "When is the Windows version launching?",

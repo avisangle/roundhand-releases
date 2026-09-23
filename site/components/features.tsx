@@ -14,7 +14,7 @@ const FEATURES = [
   {
     icon: Sparkles,
     title: "Cleanup that reads like you",
-    body: "Filler words, false starts and missing punctuation are fixed before the text is inserted. Add your own AI key to rewrite with presets you control.",
+    body: "Filler words, false starts and missing punctuation are fixed before the text is inserted. Want more? Add your own OpenAI or Claude API key to rewrite text in styles you choose, like more formal or as bullet points.",
   },
   {
     icon: AppWindow,

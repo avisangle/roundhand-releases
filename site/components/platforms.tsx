@@ -43,7 +43,7 @@ export function Platforms() {
               </span>
             </div>
             <p className="mt-5 leading-relaxed text-muted-foreground">
-              The same on-device transcription and privacy guarantees, built for Windows. Leave
+              The same offline transcription and privacy guarantees, built for Windows. Leave
               your email and we&rsquo;ll tell you when it&rsquo;s ready.
             </p>
             <div className="mt-auto pt-8">
