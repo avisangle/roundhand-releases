@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { DOWNLOAD_URL, VERSION } from "@/lib/site";
 
 type Props = {
-  placement: "header" | "hero" | "platforms";
+  placement: "header" | "hero" | "platforms" | "wispr-alternative";
   size?: "sm" | "lg";
   className?: string;
 };

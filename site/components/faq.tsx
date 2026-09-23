@@ -1,7 +1,8 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { MODEL_DOWNLOAD } from "@/lib/site";
 
-const FAQS = [
+// Also rendered as FAQPage JSON-LD by <StructuredData>, so edit questions here only.
+export const FAQS = [
   {
     q: "Do I need an internet connection?",
     a: `Only once. On first launch Roundhand downloads its speech model (${MODEL_DOWNLOAD}). After that, dictation works fully offline. Optional AI cleanup through a provider needs a connection to that provider.`,
@@ -17,6 +18,10 @@ const FAQS = [
   {
     q: "Can I use my own AI account to polish the text?",
     a: "Yes, if you want to. Paste an API key from OpenAI or Anthropic (Claude) and Roundhand can rewrite what you said in styles you define, like more formal, shorter or bullet points. Only the transcript text is sent, and the provider bills you directly.",
+  },
+  {
+    q: "How is Roundhand different from Wispr Flow?",
+    a: "Both let you hold a shortcut, speak, and get clean text in any app. Wispr Flow transcribes your voice on its cloud servers and caps its free plan by words per week. Roundhand transcribes on your Mac, works offline, needs no account and has no word limit.",
   },
   {
     q: "When is the Windows version launching?",
@@ -37,7 +42,9 @@ export function Faq() {
               <AccordionTrigger className="rounded-none py-5 text-base font-semibold hover:no-underline">
                 {item.q}
               </AccordionTrigger>
-              <AccordionContent className="pb-6 text-base leading-relaxed text-muted-foreground">
+              {/* hiddenUntilFound keeps closed answers in the HTML (hidden="until-found"), so
+                  search engines and the browser's find-in-page can still read them. */}
+              <AccordionContent hiddenUntilFound className="pb-6 text-base leading-relaxed text-muted-foreground">
                 <p className="max-w-[62ch]">{item.a}</p>
               </AccordionContent>
             </AccordionItem>

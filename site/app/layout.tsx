@@ -3,6 +3,7 @@ import { Pinyon_Script, Schibsted_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { APP_ICON } from "@/lib/brand";
+import { SITE_URL } from "@/lib/site";
 import { BROWSER_CHROME } from "@/lib/tokens";
 import "./globals.css";
 
@@ -19,7 +20,7 @@ const pinyon = Pinyon_Script({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://roundhand.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: "Roundhand: private dictation for your Mac",
   description:
     "Hold a shortcut, speak, and clean text appears in whatever app you're using. Transcription runs on your Mac; audio is never uploaded or saved.",

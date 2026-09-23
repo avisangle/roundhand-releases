@@ -3,6 +3,9 @@
 
 export const VERSION = "0.2.0";
 
+// Canonical origin, with no trailing slash. Used for metadata, robots, the sitemap and JSON-LD.
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://roundhand.vercel.app";
+
 // Stable GitHub release URL. Do not paste the signed release-assets.githubusercontent.com
 // link from the browser's download history: it carries an expiry (`se=`) and stops
 // working about an hour after it was issued.

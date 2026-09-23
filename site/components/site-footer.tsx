@@ -1,9 +1,11 @@
+import Link from "next/link";
 import { GITHUB_URL, RELEASE_NOTES_URL, RELEASES_URL, VERSION } from "@/lib/site";
 
 const LINKS = [
   { href: RELEASE_NOTES_URL, label: `Release notes (v${VERSION})` },
   { href: RELEASES_URL, label: "All releases" },
-  { href: "#privacy", label: "Privacy" },
+  { href: "/#privacy", label: "Privacy" },
+  { href: "/wispr-flow-alternative", label: "Wispr Flow alternative" },
   { href: GITHUB_URL, label: "GitHub" },
 ];
 
@@ -22,9 +24,16 @@ export function SiteFooter() {
           <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
             {LINKS.map((link) => (
               <li key={link.label}>
-                <a href={link.href} className="text-muted-foreground transition-colors hover:text-foreground">
-                  {link.label}
-                </a>
+                {/* Link for pages on this site, a plain anchor for GitHub. */}
+                {link.href.startsWith("/") ? (
+                  <Link href={link.href} className="text-muted-foreground transition-colors hover:text-foreground">
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a href={link.href} className="text-muted-foreground transition-colors hover:text-foreground">
+                    {link.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>
