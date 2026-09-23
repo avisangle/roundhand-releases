@@ -1,0 +1,181 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  Roundhand design tokens: the macOS app's v2 "Warm Editorial" record, transcribed.
+  DESIGN.md documents every value and rule. This block is the only place a colour
+  literal may appear; components use the Tailwind names below, never hex, rgb or
+  palette colours such as white or black.
+
+  Light-only: the app's dark values are unreviewed (OR-168).
+  System rule: rust is brand/chrome, crimson is error. Keep the two off one surface.
+*/
+:root {
+  color-scheme: light;
+
+  /* Colour: token values from the app, light appearance */
+  --window: #ece9e2; /* surface.window */
+  --panel: #fcfbf9; /* surface.panel */
+  --card-ground: #f4f1ec; /* surface.card */
+  --raised: rgb(0 0 0 / 0.045); /* surface.raised */
+  --scrim: rgb(36 38 44 / 0.32); /* surface.scrim */
+  --separator: rgb(0 0 0 / 0.09); /* surface.separator */
+  --pill: rgb(255 255 255 / 0.86); /* surface.pill */
+  --pill-opaque: #f4f4f4; /* surface.pill.opaque */
+  --ink: #24262c; /* text.primary */
+  --ink-secondary: rgb(36 38 44 / 0.7); /* text.secondary */
+  --rust: #c15533; /* accent.control */
+  --rust-top: #cb6746; /* gradient.primary.top */
+  --rust-bottom: #b04a2c; /* gradient.primary.bottom */
+  --crimson: #c1121f; /* status.warning */
+  --dataviz-1: #e7c2a8; /* dataviz.1 */
+  --dataviz-2: #d98c6a; /* dataviz.2 */
+  --dataviz-3: #c15533; /* dataviz.3 */
+  --dataviz-4: #9a3f28; /* dataviz.4 */
+  --guide: #dad5ca; /* dataviz.empty */
+  --white: #ffffff; /* not an app token: text on the rust gloss, and the base for tints */
+
+  /* Elevation, card < raised < pill < modal */
+  --elevation-card: 0 2px 8px rgb(0 0 0 / 0.06); /* elevation.card */
+  --elevation-raised: 0 6px 16px rgb(0 0 0 / 0.1); /* elevation.raised */
+  --elevation-pill: 0 6px 22px rgb(0 0 0 / 0.16); /* elevation.pill */
+  --elevation-pill-opaque: 0 6px 22px rgb(0 0 0 / 0.32); /* elevation.pill.opaque */
+  --elevation-modal: 0 20px 48px rgb(0 0 0 / 0.2); /* elevation.modal */
+
+  /* Website roles derived from the tokens above; add new roles here, not inline */
+  --rust-text: var(--dataviz-4); /* small rust text on cream needs the darker stop */
+  --menubar: color-mix(in srgb, var(--white) 45%, transparent); /* demo's mock menu bar */
+  --deep: var(--ink); /* the dark privacy section */
+  --deep-fg: var(--panel);
+  --deep-muted: color-mix(in srgb, var(--panel) 70%, transparent);
+  --deep-rule: color-mix(in srgb, var(--white) 14%, transparent);
+
+  /* shadcn/ui roles */
+  --background: var(--panel);
+  --foreground: var(--ink);
+  --card: var(--card-ground);
+  --card-foreground: var(--ink);
+  --popover: var(--panel);
+  --popover-foreground: var(--ink);
+  --primary: var(--rust);
+  --primary-foreground: var(--white);
+  --secondary: var(--window);
+  --secondary-foreground: var(--ink);
+  --muted: var(--window);
+  --muted-foreground: var(--ink-secondary);
+  --accent: var(--window);
+  --accent-foreground: var(--ink);
+  --destructive: var(--crimson);
+  --border: var(--separator);
+  --input: var(--guide);
+  --ring: var(--rust);
+  --radius: 0.375rem; /* radius.control, 6pt */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-deep: var(--deep);
+  --color-deep-fg: var(--deep-fg);
+  --color-deep-muted: var(--deep-muted);
+  --color-deep-rule: var(--deep-rule);
+  --color-guide: var(--guide);
+  --color-window: var(--window);
+  --color-raised: var(--raised);
+  --color-scrim: var(--scrim);
+  --color-pill: var(--pill);
+  --color-pill-opaque: var(--pill-opaque);
+  --color-menubar: var(--menubar);
+  --color-rust: var(--rust);
+  --color-rust-text: var(--rust-text);
+  --color-dataviz-1: var(--dataviz-1);
+  --color-dataviz-2: var(--dataviz-2);
+  --color-dataviz-3: var(--dataviz-3);
+  --color-dataviz-4: var(--dataviz-4);
+
+  --shadow-card: var(--elevation-card);
+  --shadow-raised: var(--elevation-raised);
+  --shadow-pill: var(--elevation-pill);
+  --shadow-pill-opaque: var(--elevation-pill-opaque);
+  --shadow-modal: var(--elevation-modal);
+
+  --font-sans: var(--font-schibsted);
+  --font-heading: var(--font-schibsted);
+  --font-script: var(--font-pinyon);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: 0.75rem; /* radius.row, 12pt */
+  --radius-2xl: 1rem; /* radius.card, 16pt */
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  :focus-visible {
+    outline: 2px solid var(--rust);
+    outline-offset: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  /* The gloss the app reserves for primary elements (record button, pill). */
+  .rust-gloss {
+    background-image: linear-gradient(to bottom, var(--rust-top), var(--rust-bottom));
+    color: var(--white);
+  }
+
+  /*
+    Copybook ruling: the baseline/x-height lines and 55° slant guides printed on
+    roundhand practice sheets. Used behind the hero demo and nowhere else.
+  */
+  .copybook {
+    background-image:
+      repeating-linear-gradient(
+        to bottom,
+        transparent 0 27px,
+        var(--guide) 27px 28px,
+        transparent 28px 38px,
+        var(--guide) 38px 39px,
+        transparent 39px 56px
+      ),
+      repeating-linear-gradient(
+        55deg,
+        transparent 0 47px,
+        color-mix(in oklab, var(--guide) 55%, transparent) 47px 48px
+      );
+  }
+}
