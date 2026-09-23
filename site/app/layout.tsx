@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Pinyon_Script, Schibsted_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { APP_ICON } from "@/lib/brand";
 import { BROWSER_CHROME } from "@/lib/tokens";
 import "./globals.css";
 
@@ -27,7 +28,10 @@ export const metadata: Metadata = {
     description:
       "Speak naturally and type anywhere on your Mac. On-device transcription, no accounts, no telemetry.",
     type: "website",
+    images: [{ url: APP_ICON[1024], width: 1024, height: 1024, alt: "Roundhand app icon" }],
   },
+  // The share image is the square app icon, so use the square card.
+  twitter: { card: "summary" },
 };
 
 export const viewport: Viewport = {

@@ -110,6 +110,26 @@ The pill is the app's recording capsule, and the hero demo reproduces it.
 
 Under `prefers-reduced-motion`, skip the loop and show the finished state.
 
+## App icon
+
+The macOS app's icon lives in `public/brand/roundhand-icon-{16,32,256,512,1024}.png`,
+copied from the app's `AppIcon.appiconset`. It has transparent padding around the
+rounded square, like every macOS icon.
+
+- **On a page:** use `<AppIcon size={…} />` from `components/app-icon.tsx`. For a path
+  (metadata, a manifest), use `APP_ICON` from `lib/brand.ts`. Don't write icon paths by
+  hand or inline an image.
+- **Where it appears:** in the header before the wordmark (34px), and on the macOS card in
+  "Get Roundhand" (64px), where it shows what you're downloading. Keep it out of the
+  hero, where the pill demo is the focus, and the footer. Don't put it in the demo's mock
+  menu bar either: a real menu bar item is a monochrome glyph, not the colour icon.
+- **Browser icons:** `app/favicon.ico` (16, 32, 48), `app/icon.png` (512) and
+  `app/apple-icon.png` (180, trimmed and set on `--panel`) are generated. Next adds their
+  `<link>` tags. After replacing the files in `public/brand/`, run `npm run icons` and
+  commit the results.
+- **Link previews:** the Open Graph image is the 1024px icon, with a square `summary`
+  card.
+
 ## Type
 
 The app uses SF for body text and New York (the system serif) for display headings: 28pt

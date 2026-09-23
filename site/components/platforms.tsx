@@ -1,3 +1,4 @@
+import { AppIcon } from "@/components/app-icon";
 import { DownloadButton } from "@/components/download-button";
 import { WaitlistForm } from "@/components/waitlist-form";
 import { MODEL_DOWNLOAD, RELEASE_NOTES_URL, REQUIREMENTS } from "@/lib/site";
@@ -12,11 +13,14 @@ export function Platforms() {
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           <article className="flex flex-col rounded-2xl bg-card p-6 shadow-card sm:p-8">
-            <div className="flex items-baseline justify-between gap-4">
-              <h3 className="text-2xl font-semibold tracking-[-0.02em]">macOS</h3>
-              <span className="rounded-full bg-window px-2.5 py-1 text-sm font-medium text-foreground">
-                Available now
-              </span>
+            <div className="flex min-h-16 items-center gap-3">
+              <AppIcon size={64} className="-ml-1.5" />
+              <div className="flex flex-1 items-baseline justify-between gap-4">
+                <h3 className="text-2xl font-semibold tracking-[-0.02em]">macOS</h3>
+                <span className="rounded-full bg-window px-2.5 py-1 text-sm font-medium text-foreground">
+                  Available now
+                </span>
+              </div>
             </div>
             <ul className="mt-5 space-y-2 leading-relaxed text-muted-foreground">
               <li>{REQUIREMENTS}. Intel Macs aren&rsquo;t supported.</li>
@@ -32,7 +36,7 @@ export function Platforms() {
           </article>
 
           <article className="flex flex-col rounded-2xl border border-dashed border-guide p-6 sm:p-8">
-            <div className="flex items-baseline justify-between gap-4">
+            <div className="flex min-h-16 items-center justify-between gap-4">
               <h3 className="text-2xl font-semibold tracking-[-0.02em]">Windows</h3>
               <span className="rounded-full border border-border px-2.5 py-1 text-sm font-medium text-muted-foreground">
                 In development
