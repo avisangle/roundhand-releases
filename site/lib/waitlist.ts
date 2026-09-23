@@ -42,6 +42,9 @@ export async function addToWaitlist(rawEmail: unknown, honeypot?: unknown): Prom
       signal: AbortSignal.timeout(8000),
     });
     if (!res.ok) throw new Error(`webhook responded ${res.status}`);
+    // Apps Script always answers 200, so a rejected signup (wrong ?key=) only shows in the body.
+    const reply = await res.json().catch(() => null);
+    if (reply && reply.ok === false) throw new Error("webhook rejected the signup");
     return { ok: true };
   } catch (err) {
     console.error("[waitlist] failed to forward signup", err);
