@@ -6,6 +6,16 @@
         <description>Updates for Roundhand</description>
         <language>en</language>
         <item>
+            <title>0.2.1</title>
+            <pubDate>Sun, 27 Sep 2026 00:31:59 +0530</pubDate>
+            <link>https://github.com/avisangle/roundhand-releases</link>
+            <sparkle:version>585</sparkle:version>
+            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.2.1/Roundhand-0.2.1.dmg" length="15093058" type="application/octet-stream" sparkle:edSignature="0RE/kPlmK93J+gmXgUZe/KqmgjbLbMTbOeDzJyM0TfuEoj41jdKiC/hajrwgZA20YJuwJufYi69NXs8FRZ9rAA=="/>
+        </item>
+        <item>
             <title>0.2.0</title>
             <pubDate>Tue, 22 Sep 2026 23:38:27 +0530</pubDate>
             <link>https://github.com/avisangle/roundhand-releases</link>
