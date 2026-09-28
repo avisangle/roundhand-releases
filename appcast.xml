@@ -6,6 +6,25 @@
         <description>Updates for Roundhand</description>
         <language>en</language>
         <item>
+            <title>0.2.3</title>
+            <pubDate>Mon, 28 Sep 2026 17:45:18 +0530</pubDate>
+            <link>https://github.com/avisangle/roundhand-releases</link>
+            <sparkle:version>631</sparkle:version>
+            <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[- Dictating into a password field no longer reads what the field contains.
+- If cloud setup can't finish on this Mac, for example because your account has reached its device limit, Roundhand now says why and offers Retry setup instead of showing "setting up" indefinitely.
+- A template that fails to save now shows a plain message instead of a technical error.
+- A rewrite that can't be completed no longer tells every plan to add a key in Settings.
+- The pill and menu bar now say "Cleaning via Roundhand" on Free and Pro.
+- The Plans screen is wider, keeps the Monthly/Yearly switch beside Refresh, and fits smaller windows.
+
+Requires an Apple Silicon Mac and macOS 14 or later.
+]]></description>
+            <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.2.3/Roundhand-0.2.3.dmg" length="15137514" type="application/octet-stream" sparkle:edSignature="JL1o37q6Sk0DBpZE48KsngEeLMxEwfq6c0K6fJRhxwhN3hYCxx3KR7FTCP7N7XnXtPz8btmw1ie8ac0NwHZ3BQ=="/>
+        </item>
+        <item>
             <title>0.2.2</title>
             <pubDate>Sun, 27 Sep 2026 17:55:30 +0530</pubDate>
             <link>https://github.com/avisangle/roundhand-releases</link>
@@ -24,16 +43,6 @@
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.2.1/Roundhand-0.2.1.dmg" length="15093058" type="application/octet-stream" sparkle:edSignature="0RE/kPlmK93J+gmXgUZe/KqmgjbLbMTbOeDzJyM0TfuEoj41jdKiC/hajrwgZA20YJuwJufYi69NXs8FRZ9rAA=="/>
-        </item>
-        <item>
-            <title>0.2.0</title>
-            <pubDate>Tue, 22 Sep 2026 23:38:27 +0530</pubDate>
-            <link>https://github.com/avisangle/roundhand-releases</link>
-            <sparkle:version>430</sparkle:version>
-            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.2.0/Roundhand-0.2.0.dmg" length="14920002" type="application/octet-stream" sparkle:edSignature="97GhGNrWv0nAfcyeCD0EibvXp5rXaiGtm+rAhN07Op370mbnzidC85RiBJ3Bsa9BsW/WnLu3qeQs5qOCqczqCA=="/>
         </item>
     </channel>
 </rss>
