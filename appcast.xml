@@ -6,6 +6,20 @@
         <description>Updates for Roundhand</description>
         <language>en</language>
         <item>
+            <title>0.2.5</title>
+            <pubDate>Tue, 29 Sep 2026 21:52:01 +0530</pubDate>
+            <link>https://github.com/avisangle/roundhand-releases</link>
+            <sparkle:version>651</sparkle:version>
+            <sparkle:shortVersionString>0.2.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[- Dictating an email into Mail no longer adds "Best," at the end. Your own sign-off, if you say one, still goes on its own line, and nothing is added when you do not.
+
+Requires an Apple Silicon Mac and macOS 14 or later.
+]]></description>
+            <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.2.5/Roundhand-0.2.5.dmg" length="15159601" type="application/octet-stream" sparkle:edSignature="JSoKx3lOGRxUT88Sb4ZVO/QyudiHFtv+O0aClc2e8DwcW7ivpum5IYPVOS4k7cSATXGR2+Qtpd5TsrdT0o6HAQ=="/>
+        </item>
+        <item>
             <title>0.2.4</title>
             <pubDate>Tue, 29 Sep 2026 21:26:47 +0530</pubDate>
             <link>https://github.com/avisangle/roundhand-releases</link>
@@ -42,16 +56,6 @@ Requires an Apple Silicon Mac and macOS 14 or later.
 Requires an Apple Silicon Mac and macOS 14 or later.
 ]]></description>
             <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.2.3/Roundhand-0.2.3.dmg" length="15137514" type="application/octet-stream" sparkle:edSignature="JL1o37q6Sk0DBpZE48KsngEeLMxEwfq6c0K6fJRhxwhN3hYCxx3KR7FTCP7N7XnXtPz8btmw1ie8ac0NwHZ3BQ=="/>
-        </item>
-        <item>
-            <title>0.2.2</title>
-            <pubDate>Sun, 27 Sep 2026 17:55:30 +0530</pubDate>
-            <link>https://github.com/avisangle/roundhand-releases</link>
-            <sparkle:version>614</sparkle:version>
-            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.2.2/Roundhand-0.2.2.dmg" length="15135157" type="application/octet-stream" sparkle:edSignature="1otdkoqMZ4EKl4TzesFW6uM5FEeTWNLdCmmA499xYcsoFMoOYj4kMFSmGDq2DchI+UHv1Ud+0eO+Qn6g/SARBw=="/>
         </item>
     </channel>
 </rss>
