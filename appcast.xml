@@ -6,6 +6,25 @@
         <description>Updates for Roundhand</description>
         <language>en</language>
         <item>
+            <title>0.2.4</title>
+            <pubDate>Tue, 29 Sep 2026 21:26:47 +0530</pubDate>
+            <link>https://github.com/avisangle/roundhand-releases</link>
+            <sparkle:version>649</sparkle:version>
+            <sparkle:shortVersionString>0.2.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[- Apps without a rule of their own, such as Outlook, Gmail in your browser, Teams, WhatsApp, Obsidian and Notion, now get dictation formatted the way that app is usually written: conversational in a chat app, paragraphs and your own lists in a notes app, your own greeting and sign-off on their own lines in email. Roundhand still adds nothing you did not say.
+- Speaking to Claude Code, Amp or another coding agent in a terminal is now formatted as a message, with full sentences and punctuation, even when the window title does not name the agent. Roundhand also looks at the key hints an agent shows at the bottom of the terminal. A plain shell still gets single-line commands.
+- If your Mac's language is not one Roundhand can transcribe, dictation now defaults to English instead of guessing the language, which often guessed wrong on short phrases. You can still turn on auto-detect in Settings.
+- The sidebar's Help link, which did nothing, is now About: it shows the version you are running, a Check for Updates button and links to support, release notes and privacy.
+- Roundhand now reminds you about Plans now and then when your trial has ended or your Pro credits run out, and at most three times ever if you use local-only mode. Choose "Don't show this again" in the menu bar menu to stop these reminders.
+- Dictating an email into Mail now lays it out as one: your greeting on its own line, the message in paragraphs, and your own sign-off, or "Best," if you did not say one. A one-sentence reply is left as you said it. Dictating into Notes turns a spoken list of three or more items, such as "shopping list, eggs, milk and bread", into a heading with bullets.
+
+Requires an Apple Silicon Mac and macOS 14 or later.
+]]></description>
+            <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.2.4/Roundhand-0.2.4.dmg" length="15159023" type="application/octet-stream" sparkle:edSignature="u94E+julWpJkPjUao4dVLWL9dABWa/MYLjKsHm6qoyu+ShJaBoSeBojM2HFLqq7jpTAiqNzZRtF7oVvxRR69Ag=="/>
+        </item>
+        <item>
             <title>0.2.3</title>
             <pubDate>Mon, 28 Sep 2026 17:45:18 +0530</pubDate>
             <link>https://github.com/avisangle/roundhand-releases</link>
@@ -33,16 +52,6 @@ Requires an Apple Silicon Mac and macOS 14 or later.
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.2.2/Roundhand-0.2.2.dmg" length="15135157" type="application/octet-stream" sparkle:edSignature="1otdkoqMZ4EKl4TzesFW6uM5FEeTWNLdCmmA499xYcsoFMoOYj4kMFSmGDq2DchI+UHv1Ud+0eO+Qn6g/SARBw=="/>
-        </item>
-        <item>
-            <title>0.2.1</title>
-            <pubDate>Sun, 27 Sep 2026 00:31:59 +0530</pubDate>
-            <link>https://github.com/avisangle/roundhand-releases</link>
-            <sparkle:version>585</sparkle:version>
-            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.2.1/Roundhand-0.2.1.dmg" length="15093058" type="application/octet-stream" sparkle:edSignature="0RE/kPlmK93J+gmXgUZe/KqmgjbLbMTbOeDzJyM0TfuEoj41jdKiC/hajrwgZA20YJuwJufYi69NXs8FRZ9rAA=="/>
         </item>
     </channel>
 </rss>
