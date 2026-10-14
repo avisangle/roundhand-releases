@@ -6,6 +6,23 @@
         <description>Updates for Roundhand</description>
         <language>en</language>
         <item>
+            <title>0.5.0</title>
+            <pubDate>Wed, 14 Oct 2026 10:07:38 +0530</pubDate>
+            <link>https://github.com/avisangle/roundhand-releases</link>
+            <sparkle:version>950</sparkle:version>
+            <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[- The free trial of cloud cleanup now lasts 30 days instead of 15.
+- "This is me" now learns your voice from any meeting note, not only the one just processed.
+- A meeting with no speech no longer asks for a summary: it says no speech was found instead.
+- Import an audio or video recording into the Notetaker to get a transcript, speakers and a summary. The audio is decoded and transcribed on your Mac; only the transcript text is sent, for the summary.
+
+Requires an Apple Silicon Mac and macOS 14 or later.
+]]></description>
+            <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.5.0/Roundhand-0.5.0.dmg" length="16056639" type="application/octet-stream" sparkle:edSignature="zaI46Xlk7VoQ9C+j0KrcXTUxxmz0rQZcps2U2oq2UiwNQyDUYpb6xSylfRboXv/aoO8w4qN2htaF3WbvOvOHAg=="/>
+        </item>
+        <item>
             <title>0.4.0</title>
             <pubDate>Sat, 10 Oct 2026 01:45:14 +0530</pubDate>
             <link>https://github.com/avisangle/roundhand-releases</link>
@@ -53,20 +70,6 @@ Requires an Apple Silicon Mac and macOS 14 or later.
 Requires an Apple Silicon Mac and macOS 14 or later.
 ]]></description>
             <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.3.0/Roundhand-0.3.0.dmg" length="15869979" type="application/octet-stream" sparkle:edSignature="u5CQ/6ty9A+zADgd9Kjyhx7XLLss+msvC5C8sW2bpthMSVyymAOJ14nkmWbn+uKFbppJsw291nq6XZU8ZyFdDw=="/>
-        </item>
-        <item>
-            <title>0.2.5</title>
-            <pubDate>Tue, 29 Sep 2026 21:52:01 +0530</pubDate>
-            <link>https://github.com/avisangle/roundhand-releases</link>
-            <sparkle:version>651</sparkle:version>
-            <sparkle:shortVersionString>0.2.5</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[- Dictating an email into Mail no longer adds "Best," at the end. Your own sign-off, if you say one, still goes on its own line, and nothing is added when you do not.
-
-Requires an Apple Silicon Mac and macOS 14 or later.
-]]></description>
-            <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.2.5/Roundhand-0.2.5.dmg" length="15159601" type="application/octet-stream" sparkle:edSignature="JSoKx3lOGRxUT88Sb4ZVO/QyudiHFtv+O0aClc2e8DwcW7ivpum5IYPVOS4k7cSATXGR2+Qtpd5TsrdT0o6HAQ=="/>
         </item>
     </channel>
 </rss>
