@@ -6,6 +6,30 @@
         <description>Updates for Roundhand</description>
         <language>en</language>
         <item>
+            <title>0.6.0</title>
+            <pubDate>Mon, 19 Oct 2026 21:55:17 +0530</pubDate>
+            <link>https://github.com/avisangle/roundhand-releases</link>
+            <sparkle:version>1043</sparkle:version>
+            <sparkle:shortVersionString>0.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[- The menu bar icon and the recording pill now show the Roundhand mark, the quotation mark from the app icon, instead of a microphone and a dot. In the menu bar the mark sits in a filled square while you dictate and gains a dot while a meeting records; in the pill it breathes, dims and takes the warning colour just as the dot did.
+- Opening Roundhand from the Dock, Spotlight or Finder now shows the main window the same way Open Roundhand in the menu bar does, with the "Hold Fn and speak" hint, the tip card for each page and the dots on new tips. Before, a window opened that way showed none of them.
+- Each page of the main window except Insights can show a short How it works card with an animated example. Press Got it to fold it away; the How it works button at the top brings it back.
+- When a meeting cannot be processed, Roundhand now tells you: a card appears, and the meeting stays in Notetaker as "Not processed" with Try again and Delete recording. Its recording is kept for 7 days so you can try again. Before, the meeting disappeared without a message and its recording was deleted.
+- Your history setting in Data and privacy now removes old meetings (with their kept recordings and screenshots) and old dictations even when you do not dictate: they are cleared when Roundhand starts and after each meeting finishes processing.
+- The meeting cards ("Meeting over?", the note after a recording stops on its own, the microphone-only notice and the offer to record) are now hidden from screen shares and screenshots, like the live transcript window. You still see them on your screen.
+- Meetings now use your dictionary: a dictionary word shows correctly in the live transcript, the saved transcript, Copy all, the Markdown export and find, and summaries spell your dictionary words, and the names from Name speakers when you choose Generate summary, your way. After you name speakers, close misspellings of those names in that meeting's transcript, summary and action items show the right spelling. The saved text is not changed, so removing a name or a dictionary entry brings back what was heard.
+- An imported recording is now kept for your full history period counted from the day you import it, so importing an older recording no longer gets it deleted right away. The note still shows the date the recording was made.
+- A meeting interrupted by a crash after its transcript was saved now finishes on the next launch instead of showing as failed, and Try again recovers one that already did.
+- Meeting summaries now use Claude Haiku 5.5, and so does cleanup on a Free or Pro plan. If you use your own key and choose Claude Haiku 5.5, cleanup now skips the model's thinking step, so it comes back sooner.
+- Dictation and meeting recording with a Bluetooth headset no longer crash or stop working without a word when the headset's microphone switches over: Roundhand waits for the switch to finish, keeps recording, and if the microphone still does not respond it says so. A microphone you choose in Settings now records even when your default microphone is a different kind of device, such as a Bluetooth headset. Unplugging the microphone you are recording with no longer pauses recording: Roundhand moves to your next microphone straight away.
+
+Requires an Apple Silicon Mac and macOS 14 or later.
+]]></description>
+            <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.6.0/Roundhand-0.6.0.dmg" length="16309189" type="application/octet-stream" sparkle:edSignature="/7vUAUJ3gQqjD5aTTaVKf9Tjg3MMzOZheu34vMpfED/LJtONExKPwbAVIe5wzasvDH+4wxU6hG/GiH/h5oquBg=="/>
+        </item>
+        <item>
             <title>0.5.0</title>
             <pubDate>Wed, 14 Oct 2026 10:07:38 +0530</pubDate>
             <link>https://github.com/avisangle/roundhand-releases</link>
@@ -45,31 +69,6 @@ Requires an Apple Silicon Mac and macOS 14 or later.
 Requires an Apple Silicon Mac and macOS 14 or later.
 ]]></description>
             <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.4.0/Roundhand-0.4.0.dmg" length="15920717" type="application/octet-stream" sparkle:edSignature="000hxwotKNWxq/ghmgEMBsz3a63weJHXly+VWhuVe7mQ2oizOHcry3p/mopfBBsixIiDaE8q++Znp0IRxlZ1Bw=="/>
-        </item>
-        <item>
-            <title>0.3.0</title>
-            <pubDate>Sun, 04 Oct 2026 00:55:22 +0530</pubDate>
-            <link>https://github.com/avisangle/roundhand-releases</link>
-            <sparkle:version>740</sparkle:version>
-            <sparkle:shortVersionString>0.3.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[- When another app starts using your microphone, Roundhand offers to record the meeting, asks for your acknowledgement before the first recording, and tells you when only your microphone is being recorded.
-- While a meeting records, a small floating window shows a live transcript. Expand it to scroll, search and copy, or shrink it to a pill.
-- A new Notetaker section in the main window lists your recorded meetings. Open one to read its transcript, summary and action items grouped by person, search the transcript, copy it, export it as Markdown, or delete it.
-- After a meeting is processed, Roundhand asks you to name its speakers, showing two lines from each. Names replace the speaker labels in the transcript, summary and action items, and "This is me" teaches Roundhand your voice for later meetings. Use Name speakers on a meeting to change them later.
-- A recording you forgot to stop now asks "Meeting over?" after a known meeting app (Zoom, Teams, Meet in Chrome or Safari, and others) lets go of the microphone, after 2 minutes of silence (5 when only your microphone is recorded), or after 4 hours, and stops a minute later unless you keep recording. It also stops when the Mac goes to sleep. After an automatic stop, a card says "Recording stopped. Writing the summary..." for a few seconds, with Open to go to the meeting. The meeting notes why it stopped.
-- A new "Keep audio for playback" setting in Data and privacy keeps a meeting's audio on this Mac as a small compressed file, so you can play it back in the meeting, scrub through it, and click a transcript line to jump there. Choose per meeting from the menu bar while recording, and delete a meeting's kept audio at any time. Kept audio is deleted with its meeting, by history retention, and by Clear history, which now clears meetings too.
-- If System Audio Recording was refused, Roundhand now notices about 30 seconds into a meeting, once the meeting app has been playing sound that long, and says so in the status menu and the live window, with where to allow it. The recording carries on, and a meeting in which the other people were never heard is saved as microphone only.
-- Meeting cards (the offer to record, the microphone-only notice and "Meeting over?") now open at the bottom centre of the screen, above where the dictation pill shows, so they never cover the live transcript window. They name the call app when one is known: "Your Zoom call just started." and "Looks like your Zoom call ended."
-- The "Keep audio for playback" switch is now also on the Notetaker page, above your meetings. It is the same setting as the one in Settings > Privacy and diagnostics, so changing either one changes both.
-- The compact live transcript window now scrolls through the whole meeting. It follows new lines while you are at the bottom; scroll up to read and it stays put, with a "Latest" button to jump back. In a meeting's note, the selected tab's icon is highlighted, and Name speakers, Export, Delete and Copy all are outlined buttons with icons.
-- Every button now answers the pointer: it darkens a little on hover and a little more, with a slight shrink, when pressed (only the darkening under Reduce Motion). Copy all and History's Copy show a tick and "Copied" for a moment after copying. The setup window's Back, Continue, Finish and Retry download buttons now use Roundhand's own button look.
-- A meeting now has one Delete, in its header. When the meeting kept its audio, it offers Delete audio only, which keeps the transcript, summary and action items, or Delete meeting, which removes everything. The live transcript window uses larger, more widely spaced type, and the back button in a meeting's note is an outlined "Notetaker" button.
-
-Requires an Apple Silicon Mac and macOS 14 or later.
-]]></description>
-            <enclosure url="https://github.com/avisangle/roundhand-releases/releases/download/v0.3.0/Roundhand-0.3.0.dmg" length="15869979" type="application/octet-stream" sparkle:edSignature="u5CQ/6ty9A+zADgd9Kjyhx7XLLss+msvC5C8sW2bpthMSVyymAOJ14nkmWbn+uKFbppJsw291nq6XZU8ZyFdDw=="/>
         </item>
     </channel>
 </rss>
